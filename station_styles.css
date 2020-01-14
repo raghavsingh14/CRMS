@@ -1,0 +1,389 @@
+body {
+  background-image: url('back1.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+a {
+	color: white;
+	text-decoration:none;
+
+}
+.navbar {
+	overflow: hidden;
+	background-color: #333;
+	font-family: Arial;
+	opacity: 0.5;
+  }
+  
+   .navbar a {
+	float: left;
+	font-size: 16px;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+  }
+  
+   .dropdown {
+	float: left;
+	overflow: hidden;
+  }
+  
+   .dropdown .dropbtn {
+	font-size: 16px;
+	border: none;
+	outline: none;
+	color: white;
+	padding: 14px 16px;
+	background-color: inherit;
+	font-family: inherit; 
+	margin: 0; 
+  }
+  
+  /* Add a red background color to navbar links on hover */
+  .navbar a:hover, .dropdown:hover .dropbtn {
+	background-color: grey;
+  }
+  
+  /* Dropdown content (hidden by default) */
+  .dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+	float: none;
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	text-align: left;
+  }
+  
+  /* Add a grey background color to dropdown links on hover */
+  .dropdown-content a:hover {
+	background-color: #ddd;
+  }
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+	display: block;
+  }
+
+/*.sidemenu{
+	width: 140px;
+	height: 147px;
+	background-color: #3f3396;
+	position: absolute;
+	top: 200px;
+	left: 30px;
+	opacity: 0.3;
+	border-radius: 10px;
+	border: 6px solid blue;
+
+}
+.side{
+	background-color:#3f3396;
+	width:140px;
+	height:21px;
+	text-align: center;
+	color: white;
+	font-weight: bold;
+}
+.side:hover{
+	background-color:blue;
+}*/
+#p1{
+	background: blue;
+	-webkit-animation: mymove 5s infinite;
+	animation: mymove 2s infinite;
+	top: 350px;
+	left: 312px;
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	border-radius: 15px;
+	opacity: 0.3;
+}
+#p2{
+	background: blue;
+	-webkit-animation: mymove 5s infinite;
+	animation: mymove 2s infinite;
+	top: 490px;
+	left: 420px;
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	border-radius: 15px;
+	opacity: 0.3;
+}
+#p3{
+	background: blue;
+	-webkit-animation: mymove 5s infinite;
+	animation: mymove 2s infinite;
+	top: 430px;
+	left: 650px;
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	border-radius: 15px;
+	opacity: 0.3;
+}
+#p4{
+	background: blue;
+	-webkit-animation: mymove 5s infinite;
+	animation: mymove 2s infinite;
+	top: 400px;
+	left: 815px;
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	border-radius: 15px;
+	opacity: 0.3;
+}
+#p5{
+	background: blue;
+	-webkit-animation: mymove 5s infinite;
+	animation: mymove 2s infinite;
+	top: 400px;
+	left: 920px;
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	border-radius: 15px;
+	opacity: 0.3;
+}
+#p6{
+	background: blue;
+	-webkit-animation: mymove 5s infinite;
+	animation: mymove 2s infinite;
+	top: 310px;
+	left: 920px;
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	border-radius: 15px;
+	opacity: 0.3;
+}
+#p7{
+	background: blue;
+	-webkit-animation: mymove 5s infinite;
+	animation: mymove 2s infinite;
+	bottom: 50px;
+	right: 230px;
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	border-radius: 15px;
+	opacity: 0.3;
+}
+
+@-webkit-keyframes mymove {
+  50% {background-color: blue;}
+}
+@keyframes mymove {
+  50% {background-color: white;}
+}
+#spinner {
+    -webkit-animation-name: spinner;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-duration: 6s;
+
+    animation-name: spinner;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 6s;
+
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+  }
+
+  #spinner:hover {
+    -webkit-animation-play-state: paused;
+    animation-play-state: paused;
+  }
+  #stage {
+    margin: 5em auto;
+    -webkit-perspective: 1200px;
+    -moz-perspective: 1200px;
+    -ms-perspective: 1200px;
+    perspective: 1200px;
+    top:70px;
+    left:100px;
+    width: 400px;
+    height: 400px;
+    opacity: 0.5;
+  }
+   /* WebKit and Opera browsers */
+  @-webkit-keyframes spinner {
+    from { -webkit-transform: rotateY(0deg);    }
+    to   { -webkit-transform: rotateY(-360deg); }
+  }
+
+  /* all other browsers */
+  @keyframes spinner {
+    from {
+      -moz-transform: rotateY(0deg);
+      -ms-transform: rotateY(0deg);
+      transform: rotateY(0deg);
+    }
+    to {
+      -moz-transform: rotateY(-360deg);
+      -ms-transform: rotateY(-360deg);
+      transform: rotateY(-360deg);
+    }
+  }
+
+#result_main{
+	top:200px;
+	left:362px;
+	position: absolute;
+	z-index: 2;
+	opacity: 0.7;
+	width: 557px;
+	height: 257px;
+	background-color: #3f3396;
+	border-radius: 5px;
+	border: 6px solid grey;
+
+}
+#r_heading{
+	background-color: purple;
+	color:white;
+}
+#r_span{
+	width:698px;
+	height:75px;
+}
+
+#r_id{
+	width:80px;
+	height: 19px;
+	margin-right:0px;
+	margin-left:0px;
+	margin-top:0px;
+	margin-bottom:0px;
+	padding: 5px;
+	border: 2px solid black;
+}
+#r_name{
+	width:169px;
+	height:19px;
+	margin-right:0px;
+	margin-left:94px;
+	margin-top:-33px;
+	margin-bottom:0px;
+	padding: 5px;
+	border: 2px solid black;
+}
+#r_mw{
+	width:133px;
+	height:19px;
+	margin-right:0px;
+	margin-left:277px;
+	margin-top:-33px;
+	margin-bottom:0px;
+	padding: 5px;
+	border: 2px solid black;
+}
+#r_ncs{
+	width:119px;
+	height: :19px;
+	margin-right:0px;
+	margin-left:424px;
+	margin-top:-33px;
+	margin-bottom:0px;
+	padding: 5px;
+	border: 2px solid black;
+}
+#result{
+	width: 552px;
+	height: 220px;
+	border: 2px solid black;
+	color: white;
+	overflow: scroll;
+}
+#result_elements:hover{
+	background-color: green;
+}
+#response_main{
+	top:90px;
+	right: 10px;
+	width: 250px;
+	height: 500px;
+	z-index: 2;
+	position: absolute;
+	opacity: 0.8;
+	background-color: black;
+	border-radius: 5px;
+	border: 6px solid green;
+	padding:5px;
+}
+#criminal_image{
+	width: 240px;
+	height:205px;
+	border:3px solid grey;
+}
+#response{
+	width: 240px;
+	height: 285px;
+	border: 3px solid grey;
+	color:white;
+}
+#search{
+	top: 18px;
+	left:551px;
+	height :26px;
+	width :480px;
+	font-size: 20px;
+	z-index: 2;
+	opacity: 0.7;
+	position: absolute;
+	border-radius: 5px;
+	color: rgba(216, 210, 210, 0.925);
+	font-style: bold;
+	}
+.srch{
+	margin-left:55px;
+}
+	#name{
+		width:169px;
+	height:19px;
+	margin-right:0px;
+	margin-left:99px;
+	margin-top:-18px;
+	margin-bottom:0px;
+	}
+	#id{
+		width:80px;
+		height: 19px;
+		margin-right:0px;
+	margin-left:0px;
+	margin-top:0px;
+	margin-bottom:0px;
+	}
+	#mw{
+		width:88px;
+	height:19px;
+	margin-right:0px;
+	margin-left:313px;
+	margin-top:-22px;
+	margin-bottom:0px;
+	}
+	#noc{
+		width:84px;
+	height: :19px;
+	margin-right:0px;
+	margin-left:461px;
+	margin-top:-16px;
+	margin-bottom:0px;
+	}

@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>login</title>
+	<link rel="stylesheet" href="login_style.css">
+	 <script src="loginscript.js"></script> 
+	
+</head>
+<body>
+<div class="sidemenu">
+		<div class="side">Home</div></br>
+		<div class="side">Most wanted</div></br>
+		<div class="side">News</div></br>
+		<div class="side">Features</div></br>
+		<div class="side">Complaint</div></br>
+		<div class="side">About us</div></br>
+		<div class="side">Contact us</div></br>
+	</div>
+	<div id="p1">
+	</div>
+	<div id="p2">
+	</div>
+	<div id="p3">
+	</div>
+	<div id="p4">
+	</div>
+	<div id="p5">
+	</div>
+	<div id="p6">
+	</div>
+	<div id="p7">
+	</div>
+	<div id="stage">
+		<div id="spinner">
+			<img src="logo1.png">
+		</div>
+	</div>
+	<div id="loginforms">
+
+		<div class="tab">
+  		<button class="tablinks" onclick="openCity(event, 'officer')">OFFICER</button>
+  		<button class="tablinks" onclick="openCity(event, 'station')">STATION</button>
+		</div>
+
+		<!-- Tab content -->
+		<div id="officer" class="tabcontent">
+  			<form action='<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>' method="post">
+  				User id:
+  				<input type="text" name="id" required>
+  				<br>
+  				Password:
+  				<input type="password" name="password" required>
+  				<input name ="type" value="officer" hidden>
+  				<br>
+  				<input type="submit" class="button" value="Login">
+			</form>
+		</div>
+
+		<div id="station" class="tabcontent">
+			<form action='<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>' method="post">
+  			City:
+  			<input  id="city" required name ="city">
+  			<input name ="type" value="station" hidden>
+  			<br>
+  			station id:
+  				<input type="text" name="id" required>
+  				<br>
+  				Password:
+  				<input type="password" name="password" required>
+  				<br>
+  			<input type="submit" class="button" value="Login">
+			</form>
+		</div>
+
+			</div>
+
+</body>
+</html>
